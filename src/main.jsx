@@ -11,9 +11,10 @@ import Welcome from "./components/Principal/Welcome";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/register/:id" element={<Register />} />
+      <Route path="/" element={<Login />} />
+      <Route path="/home" element={<Home />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/register/:id" element={<Register />} />
       <Route path="/EditarUsuario" element={<EditarUsuario/>} />
       <Route path="/DashboardAdmin" element={
         <ProtectedRoute>
